@@ -1,0 +1,9 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "rules": {
+    "no-unused-vars": 0
+  },
+  "env": {
+    "browser": true
+  }
+}
