@@ -6,8 +6,9 @@
   "scripts": {
     "test": "jest",
     "verify": "lint-staged",
-    "dev": "webpack-dev-server",
-    "build": "webpack"
+    "start": "webpack-dev-server",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "author": "is0ly",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "@babel/preset-env": "^7.8.4",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -26,6 +28,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-sonarjs": "^0.5.0",
     "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^4.2.2",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.7",
