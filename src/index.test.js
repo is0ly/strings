@@ -1,8 +1,17 @@
-import sum from './sum';
+import reverse from './reverse';
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+const warning = 'No valid arguments given!';
+
+test('Корректно делает реверс строки', () => {
+  expect(reverse('Biography')).toBe('yhpargoib');
 });
-test('sum correctly sums a big number', () => {
-  expect(sum(1000, 2000)).toBe(1000);
+test('Корректно обрабатывывет вызов без аргументов', () => {
+  expect(reverse()).toBe(warning);
+});
+test('Корректно обрабатывывет вызов без с аргументом числом', () => {
+  expect(reverse(23)).toBe(warning);
+});
+
+test('Корректно обрабатывывет вызов с экзотическими аргументами', () => {
+  expect(reverse([])).toBe(warning);
 });

@@ -1,9 +1,10 @@
 import Post from './Post';
 import './styles/style.css';
 
-import sum from './sum';
+import reverse from './reverse';
 
-console.log(sum(2, 3));
+console.log(reverse('Etiology'));
+console.log(reverse(252));
 
 const post = new Post('Webpack post titile');
 
